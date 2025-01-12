@@ -17,6 +17,10 @@ export const Container = styled.div`
         border: none;
         background-color: transparent;
         color: ${({theme, isNew}) => isNew ? theme.COLORS.GRAY_300 : theme.COLORS.WHITE};
+
+    &::placeholder {
+            color: ${({theme}) => theme.COLORS.GRAY_300};
+        }
     }
     
     > button {
@@ -32,9 +36,6 @@ export const Container = styled.div`
     
     .button-delete {
         color: ${({theme}) => theme.COLORS.RED};
-    }
-    &::placeholder {
-        color: ${({theme}) => theme.COLORS.GRAY_300};
     }
 
 `

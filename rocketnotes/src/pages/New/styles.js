@@ -19,8 +19,13 @@ export const Container = styled.div`
     .tags {
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-between;
         gap:8px;
         margin-top: -19px;
+        
+        >div {
+            width: 270px;
+        }
     }
 `
 
