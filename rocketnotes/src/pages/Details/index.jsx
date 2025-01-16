@@ -87,9 +87,7 @@ export function Details() {
 
       </Content>
       </main>
-      ) : (
-      <p>Carregando...</p>
-    )}
+      ) : (<p>Carregando...</p>)}
     </Container>
   )
 } 
